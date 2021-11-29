@@ -1,0 +1,9 @@
+README.md
+setup.py
+mypythonlib/__init__.py
+mypythonlib/myfunctions.py
+mypythonlibNC.egg-info/PKG-INFO
+mypythonlibNC.egg-info/SOURCES.txt
+mypythonlibNC.egg-info/dependency_links.txt
+mypythonlibNC.egg-info/top_level.txt
+test/test_myfunctions.py
