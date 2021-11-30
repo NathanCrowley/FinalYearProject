@@ -1,0 +1,9 @@
+# Each time you release new version add release notes
+
+Change Log
+=================
+
+0.0.1 (30/11/21)
+-----------------
+- First Release: Basic version that outputs a non-interactive Venn Diagram of 2/3 sets.
+
