@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: drawVennDiagram
+Version: 0.0.3
+Summary: Non-interactive Venn Diagram outputer of 2/3 sets.
+Home-page: UNKNOWN
+Author: Nathan Crowley
+Author-email: crowley2305@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+
+UNKNOWN
+
+

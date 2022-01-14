@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: drawVennDiagram
-Version: 0.0.3
+Version: 0.1.0
 Summary: Non-interactive Venn Diagram outputer of 2/3 sets.
 Home-page: UNKNOWN
 Author: Nathan Crowley

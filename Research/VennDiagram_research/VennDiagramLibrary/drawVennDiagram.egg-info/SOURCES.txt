@@ -4,7 +4,9 @@ MANIFEST.in
 README.md
 setup.py
 drawVennDiagram/__init__.py
+drawVennDiagram/requirements.txt
 drawVennDiagram.egg-info/PKG-INFO
 drawVennDiagram.egg-info/SOURCES.txt
 drawVennDiagram.egg-info/dependency_links.txt
+drawVennDiagram.egg-info/requires.txt
 drawVennDiagram.egg-info/top_level.txt

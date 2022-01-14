@@ -10,7 +10,7 @@ classifiers = [
 
 setup(
 	name='drawVennDiagram',
-	version='0.0.3',
+	version='0.1.0',
 	description='Non-interactive Venn Diagram outputer of 2/3 sets.',
 	url='',
 	author='Nathan Crowley',
@@ -18,5 +18,7 @@ setup(
 	license='MIT',
 	classifiers=classifiers,
 	packages=find_packages(),
-	initial_requirements=['matplotlib']
+	install_requires=[
+	'matplotlib','matplotlib_venn',
+	],
 )
