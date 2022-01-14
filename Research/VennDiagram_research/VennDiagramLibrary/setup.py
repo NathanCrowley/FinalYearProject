@@ -18,5 +18,5 @@ setup(
 	license='MIT',
 	classifiers=classifiers,
 	packages=find_packages(),
-	initial_requirements=['']
+	initial_requirements=['matplotlib']
 )
