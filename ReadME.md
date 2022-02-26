@@ -23,4 +23,5 @@ Users can create, view and interact with Venn Diagrams of up to 6 sets, using a 
 - open  :	source venv/bin/activate
 - close :	deactivate
 
-
+## Testing API
+    - tests found in TestAPI folder.
