@@ -9,6 +9,7 @@ v2_set1 = set([1,11,5])
 v2_set2 = set([2,22,5])
 v2_set3 = set([3,33,5])
 
+
 ## Only really have once instance of the venn diagram at a time
 
 '''
@@ -32,6 +33,16 @@ v1 = drawVenn([v2_set1,v2_set2,v2_set3],('A','B','C'),True)
 '''
 
 #------------------------------------------------------------------
-v1 = drawVenn([v1_set1,v1_set2], ('A','B'))
-print()
+#v1 = drawVenn([v1_set1,v1_set2], ('A','B'))
+#v1.set_labels(("nathan","John"))
 
+#v1 = drawVenn([v2_set1,v2_set2,v2_set3],('A','B','C'))
+
+#Excpet a 2 set Venn Diagram - unweighted
+v1 = drawVenn([v1_set1,v1_set2], ('A','B'), True)
+print(v1)
+
+
+'''
+Patch IDs = 01,10,11
+'''

@@ -9,6 +9,14 @@ weighted_title = "- weighted "
 unweighted_title = "- unweighted "
 three_sets_title = " - 3 sets "
 two_sets_title = " - 2 sets "
+#Colours
+default_two_set_colours = ("")
+
+'''
+8/2/22 - trying to get the colour setter and label settter working
+		- make it interactvie
+		- post it to pyPI
+'''
 
 ## How to use ****** currently only 2 set venn diagram ****---------------------
 '''
@@ -45,7 +53,7 @@ class drawVenn:
 				title += weighted_title
 			else:
 				title += unweighted_title
-		else:					# 2 set Venn diagram
+		else:								# 2 set Venn diagram
 			title += two_sets_title
 			if self.unweighted == True:
 				title += weighted_title
@@ -55,13 +63,10 @@ class drawVenn:
 		plt.show()
 		
 	# Getters and setters
-	def set_color(self):
-		pass
-		
-	def set_labels(self):
-		pass
+	def set_labels(self, labels):
+		self.labels = labels
 		
 	def set_circles_design(self):
-		pass'
+		pass
 #-------------------------------------------------------------------------------------------------------------------------------------------------	
 
