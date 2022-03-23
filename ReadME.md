@@ -33,8 +33,9 @@ professionals with the aim of visualising sets, using InteractiVenn’s approach
 Visualisation, to allow a greater understanding of given sets, and their unions and
 intersections. The Python API developed should allow users to input up to six sets of data to
 be visualised as an interactive Venn Diagram with functionality that:
-1) Allow users to visualise the union and intersections of the given complex input sets.
-2) Allow users to hover over set unions and present the elements of a given set.
+- 1) Allow users to visualise the union and intersections of the given complex input sets.
+- 2) Allow users to hover over set unions and present the elements of a given set.
+
 The developed Python API should take into account that the users may have little or no
 technical skills, this should direct the design towards being as easy as possible to use for the
 target audience. The documentation of the Python API must have clear and concise
