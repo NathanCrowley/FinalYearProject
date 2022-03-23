@@ -9,14 +9,8 @@ weighted_title = "- weighted "
 unweighted_title = "- unweighted "
 three_sets_title = " - 3 sets "
 two_sets_title = " - 2 sets "
-#Colours
-default_two_set_colours = ("")
-
-'''
-8/2/22 - trying to get the colour setter and label settter working
-		- make it interactvie
-		- post it to pyPI
-'''
+#Labels
+default_labels=["A","B","C","D","E","F"]
 
 ## How to use ****** currently only 2 set venn diagram ****---------------------
 '''
@@ -27,46 +21,56 @@ default_two_set_colours = ("")
 ## ------------------------------------------------------------------------------
 
 class drawVenn:
-	def __init__(self,subsets,labels,unweighted=False):
-		self.subsets = subsets
-		self.labels = labels
-		self.number_of_sets = len(labels)
-		self.unweighted = unweighted
-		self.title = "Venn Diagram"
-		if self.number_of_sets == 3: # 3 set Venn diagram
-			if self.unweighted == False:
-				venn3(subsets=self.subsets, set_labels=self.labels) 
-			elif self.unweighted == True:
-				venn3_unweighted(subsets=self.subsets, set_labels=self.labels)
-		elif self.number_of_sets == 2: # 2 set Venn diagram
-			if self.unweighted == False:
-				venn2(subsets=self.subsets, set_labels=self.labels)
-			elif self.unweighted == True:
-				venn2_unweighted(subsets=self.subsets, set_labels=self.labels)
-		
-		
-	def __str__(self):
-		title = self.title
-		if self.number_of_sets == 3:		# 3 set Venn diagram
-			title += three_sets_title
-			if self.unweighted == False:
-				title += weighted_title
-			else:
-				title += unweighted_title
-		else:								# 2 set Venn diagram
-			title += two_sets_title
-			if self.unweighted == True:
-				title += weighted_title
-			else:
-				title += unweighted_title
-		plt.title(title)
-		plt.show()
-		
-	# Getters and setters
-	def set_labels(self, labels):
-		self.labels = labels
-		
-	def set_circles_design(self):
-		pass
+    def __init__(self,subsets,labels,unweighted=False,colors=('r','g')):
+        self.subsets = subsets
+        self.labels = labels
+        self.number_of_sets = len(labels)
+        self.unweighted = unweighted
+        self.title = "Venn Diagram"
+        self.set_colors = colors
+        if self.number_of_sets == 3: # 3 set Venn diagram
+            if self.unweighted == False:
+                venn3(self.subsets,self.labels) 
+            elif self.unweighted == True:
+                venn3_unweighted(self.subsets,self.labels)
+        elif self.number_of_sets == 2: # 2 set Venn diagram
+            if self.unweighted == False:
+                venn2(self.subsets,self.labels,set_colors=colors)
+            elif self.unweighted == True:
+                venn2_unweighted(self.subsets,self.labels,set_colors=colors)
+
+    def __str__(self):
+        title = self.title
+        if self.number_of_sets == 3:       # 3 set Venn diagram
+            title += three_sets_title
+            if self.unweighted == False:
+                title += weighted_title
+            else:
+                title += unweighted_title
+        else:                              # 2 set Venn diagram
+            title += two_sets_title
+            if self.unweighted == True:
+                title += weighted_title
+            else:
+                title += unweighted_title
+        plt.title(title)
+        plt.show()
+
+    # Getters and setters
+    def set_solid_circles(self):
+        venn2_circles(self.subsets)
+        
+    def set_dashed_circles(self):
+        venn2_circles(self.subsets,linestyle='dashed')
+
+    def set_labels(self,labels):
+        self.labels = labels  
+    def get_labels(self):
+        return self.labels
+    
+    def get_sets_values(self):
+        return self.subsets
+    def set_sets_values(self,sets):
+        self.subsets = sets
 #-------------------------------------------------------------------------------------------------------------------------------------------------	
 
