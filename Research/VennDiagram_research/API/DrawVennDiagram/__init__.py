@@ -56,48 +56,6 @@ class drawVenn:
         plt.title(title)
         plt.show()
 
-    def read_data(file):
-        with open(file) as f:
-            lines=f.readlines()
-            labels=[]
-            values=[]
-            for line in lines: # first three as we can only handle three sets   *** connected
-                labels.append(line.split(":")[0])
-                values.append(line.split(":")[1].split(","))
-            #clean up the ";" and "\n"
-            for v in values:
-                v[-1] = v[-1].replace(';','')
-                v[-1] = v[-1].rstrip()
-            #map string values to unique integers for API input
-            mapped_values=[]
-            #1) FLATTEN
-            flat_values = [item for sublist in values for item in sublist]
-            #2) MAPPING
-            d = dict([(y,x+1) for x,y in enumerate(sorted(set(flat_values)))])
-            #3) SLICE BACK TO ORIGNAL SHAPE
-            mapped_values.append([d[x] for x in flat_values[0:6]]) #values[0] *** connected
-            mapped_values.append([d[x] for x in flat_values[6:20]])  #values[1]
-            mapped_values.append([d[x] for x in flat_values[20:36]])  #values[2]
-            #mapped_values.append([d[x] for x in flat_values[36:53]])  #values[3]
-            #mapped_values.append([d[x] for x in flat_values[53:71]])  #values[4]
-            #mapped_values.append([d[x] for x in flat_values[71:89]])  #values[4]        
-        return [labels,mapped_values,values]
-            
-        
-    
-file = "test_model.ivenn"
-data = read_data(file)
-
-labels = data[0]
-mapped_values = data[1]
-values = data[2]
-
-print("Labels:",labels,"\n")
-print("Mapped Values:",mapped_values,"\n")
-#print("Origninal Values:",values,"\n")
-        
-    
-
     # Getters and setters
     def set_solid_circles(self):
         venn2_circles(self.subsets)
@@ -118,3 +76,29 @@ print("Mapped Values:",mapped_values,"\n")
         self.subsets = sets
 #-------------------------------------------------------------------------------------------------------------------------------------------------	
 
+def read_data(file):
+    with open(file) as f:
+        lines=f.readlines()
+        labels=[]
+        values=[]
+        for line in lines: # first three as we can only handle three sets   *** connected
+            labels.append(line.split(":")[0])
+            values.append(line.split(":")[1].split(","))
+        #clean up the ";" and "\n"
+        for v in values:
+            v[-1] = v[-1].replace(';','')
+            v[-1] = v[-1].rstrip()
+        #map string values to unique integers for API input
+        mapped_values=[]
+        #1) FLATTEN
+        flat_values = [item for sublist in values for item in sublist]
+        #2) MAPPING
+        d = dict([(y,x+1) for x,y in enumerate(sorted(set(flat_values)))])
+        #3) SLICE BACK TO ORIGNAL SHAPE
+        mapped_values.append([d[x] for x in flat_values[0:6]]) #values[0] *** connected
+        mapped_values.append([d[x] for x in flat_values[6:20]])  #values[1]
+        mapped_values.append([d[x] for x in flat_values[20:36]])  #values[2]
+        #mapped_values.append([d[x] for x in flat_values[36:53]])  #values[3]
+        #mapped_values.append([d[x] for x in flat_values[53:71]])  #values[4]
+        #mapped_values.append([d[x] for x in flat_values[71:89]])  #values[4]        
+    return [labels,mapped_values,values]
