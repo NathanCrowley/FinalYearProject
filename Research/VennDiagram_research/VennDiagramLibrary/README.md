@@ -47,17 +47,14 @@ and disadvantages of each API given a number of examples.
 - **Step 3**: State the labels you wish to display.
 - **Step 4**: Create a "drawVenn" object, giving the sets tuple from **Step2** and labels from **Step3** as input parameters.
 - **Step 5**: Print the "drawVenn" object using the overridden String method of the API.
-	####Step 1: Create Python set objects with mapped values as inputs.
+	[comment]: <> (Step 1: Create Python set objects with mapped values as inputs.)
 	set1 = set(mapped_values[0])
 	set2 = set(mapped_values[1])
-
-	####Step 2: Create a Sets tuple, which contains the Python set objects created in **Step 1**.
+	[comment]: <> (Step 2: Create a Sets tuple, which contains the Python set objects created in **Step 1**.)
 	sets = (set1,set2)
-
-	####Step 3: State the labels you wish to display.
-	l2 = labels[0:2]
-
-	####Step 4: Create a "drawVenn" object, giving the sets tuple from **Step2** and labels from **Step3** as input parameters.
+	[comment]: <> (Step 3: State the labels you wish to display.)
+	l2 = ["name1","name1"]
+	[comment]: <> (Step 4: Create a "drawVenn" object, giving the sets tuple from **Step2** and labels from **Step3** as input parameters.)
 	v = drawVenn(sets,l2)
 
 		
