@@ -58,12 +58,17 @@ class drawVenn:
 
     # Getters and setters
     def set_solid_circles(self):
-        venn2_circles(self.subsets)
+        if self.number_of_sets == 3: # 3 set Venn diagram
+            venn3_circles(self.subsets)
+        elif self.number_of_sets == 2: # 2 set Venn diagram
+            venn2_circles(self.subsets)
         
     def set_dashed_circles(self):
-        venn2_circles(self.subsets,linestyle='dashed')
+        if self.number_of_sets == 3: # 3 set Venn diagram
+            venn3_circles(self.subsets,linestyle='dashed')
+        elif self.number_of_sets == 2: # 2 set Venn diagram
+            venn2_circles(self.subsets,linestyle='dashed')
 
-    
     def set_labels(self,labels):
         self.labels = labels  
         

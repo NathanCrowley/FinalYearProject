@@ -10,7 +10,7 @@ classifiers = [
 
 setup(
 	name='DrawVennDiagram',
-	version='0.3.0',
+	version='0.4.0',
 	description='Python API for visualisation of sets.',
 	url='',
 	author='Nathan Crowley',
