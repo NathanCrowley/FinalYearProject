@@ -1,0 +1,40 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Overview of Combinatorics}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Project Aims}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Deliverables}{section.1}% 4
+\BOOKMARK [1][-]{section.2}{Analysis}{}% 5
+\BOOKMARK [2][-]{subsection.2.1}{Combinatorial Objects}{section.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Permutations}{subsection.2.1}% 7
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Combinations}{subsection.2.1}% 8
+\BOOKMARK [3][-]{subsubsection.2.1.3}{Partitions}{subsection.2.1}% 9
+\BOOKMARK [3][-]{subsubsection.2.1.4}{Trees \046 Forests}{subsection.2.1}% 10
+\BOOKMARK [2][-]{subsection.2.2}{Shaping the Package}{section.2}% 11
+\BOOKMARK [2][-]{subsection.2.3}{Python Implementation}{section.2}% 12
+\BOOKMARK [1][-]{section.3}{Design}{}% 13
+\BOOKMARK [2][-]{subsection.3.1}{Technologies}{section.3}% 14
+\BOOKMARK [2][-]{subsection.3.2}{Testing Generator Algorithms}{section.3}% 15
+\BOOKMARK [2][-]{subsection.3.3}{Testing Random Algorithms}{section.3}% 16
+\BOOKMARK [1][-]{section.4}{Implementation}{}% 17
+\BOOKMARK [2][-]{subsection.4.1}{Software Implementations}{section.4}% 18
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Permutations}{subsection.4.1}% 19
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Combinations}{subsection.4.1}% 20
+\BOOKMARK [3][-]{subsubsection.4.1.3}{Partitions}{subsection.4.1}% 21
+\BOOKMARK [3][-]{subsubsection.4.1.4}{Trees}{subsection.4.1}% 22
+\BOOKMARK [2][-]{subsection.4.2}{Experiments}{section.4}% 23
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Testing Generator Algorithms}{subsection.4.2}% 24
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Testing Random Algorithms}{subsection.4.2}% 25
+\BOOKMARK [2][-]{subsection.4.3}{Incomplete Work}{section.4}% 26
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Combinations - Algorithm T}{subsection.4.3}% 27
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Tree Parsing}{subsection.4.3}% 28
+\BOOKMARK [1][-]{section.5}{Evaluation}{}% 29
+\BOOKMARK [2][-]{subsection.5.1}{Appraisal of Completed System}{section.5}% 30
+\BOOKMARK [2][-]{subsection.5.2}{Testing the Package}{section.5}% 31
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Permutations}{subsection.5.2}% 32
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Combinations}{subsection.5.2}% 33
+\BOOKMARK [3][-]{subsubsection.5.2.3}{Partitions}{subsection.5.2}% 34
+\BOOKMARK [3][-]{subsubsection.5.2.4}{Trees}{subsection.5.2}% 35
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 36
+\BOOKMARK [2][-]{subsection.6.1}{Future Work}{section.6}% 37
+\BOOKMARK [2][-]{subsection.6.2}{How the Project was Conducted}{section.6}% 38
+\BOOKMARK [2][-]{subsection.6.3}{Reflection}{section.6}% 39
+\BOOKMARK [1][-]{section*.31}{References}{}% 40
