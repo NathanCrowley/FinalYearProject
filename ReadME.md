@@ -1,4 +1,3 @@
-::: {.cell .markdown}
 # Python API for visualisation of sets
 
 #### Department of Computer Science BSc Computer Science University College Cork
